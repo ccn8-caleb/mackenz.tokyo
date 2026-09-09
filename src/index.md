@@ -1,3 +1,8 @@
+<head>
+  <meta charset="utf-8"> <!-- MUST be near the top of <head> -->
+  <title>{{mackenz.tokyo}}</title>
+</head>
+
 # mackenz.tokyo
 
 Whoa, you're really early!
