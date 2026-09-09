@@ -41,15 +41,17 @@ The repo contains `wrangler.toml` and `worker.js` to assist in deploying the sit
 
 In Cloudflare, we pull in the GitHub repo and setup the environment. Every update to the repo's `master` branch kicks off a new build in Cloudflare.
 
-`npm run build` - produces the build by using the build command configured in `package.json`
-`npx wrangler deploy` - runs wrangler on the Cloudflare deployment pipeline to get the assets where they belong
+- `npm run build` - produces the build by using the build command configured in `package.json`
+- `npx wrangler deploy` - runs wrangler on the Cloudflare deployment pipeline to get the assets where they belong
+- `worker.js` - tells the Cloudflare worker what its job is (very simple work)
+- `wrangler.toml` - configures wrangler so it can wrangle the site into a usable form for the worker to serve
 
-`worker.js` - tells the Cloudflare worker what its job is (very simple work)
-
-`wrangler.toml` - configures wrangler so it can wrangle the site into a usable form for the worker to serve
-
-## Eleventy plugins
+## Plugins
 
 ### eleventy-img
 
-I am using this plugin to process images. I'm not sure if I really need it or not, it may be useful in the long term. I can always prune it if I find it to not be very beneficial.
+I am using this plugin to process images. It is in fact necessary.
+
+### wrangler
+
+This produces a site that we can look at on the interwebs
