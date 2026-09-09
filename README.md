@@ -35,6 +35,19 @@ There are some aspects of working with eleventy that are somewhat obscure. Such 
 
 For now, my big goal is to use TailwindCSS or SCSS to add color and shapes to my site. The docs will be helpful at getting the proper pieces in place for reliably using CSS with the templates.
 
+## Deployment Pipeline
+
+The repo contains `wrangler.toml` and `worker.js` to assist in deploying the site to a Cloudflare Worker.
+
+In Cloudflare, we pull in the GitHub repo and setup the environment. Every update to the repo's `master` branch kicks off a new build in Cloudflare.
+
+`npm run build` - produces the build by using the build command configured in `package.json`
+`npx wrangler deploy` - runs wrangler on the Cloudflare deployment pipeline to get the assets where they belong
+
+`worker.js` - tells the Cloudflare worker what its job is (very simple work)
+
+`wrangler.toml` - configures wrangler so it can wrangle the site into a usable form for the worker to serve
+
 ## Eleventy plugins
 
 ### eleventy-img
