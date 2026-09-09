@@ -3,5 +3,5 @@ main = "worker.js" # Path to your Worker entry file
 compatibility_date = "2024-09-01"
 
 [assets]
-directory = "src/_site"
+directory = "_site"
 binding = "ASSETS"
