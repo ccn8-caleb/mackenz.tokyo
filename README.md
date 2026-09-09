@@ -1,4 +1,4 @@
-# mackenz.tokyo
+# [mackenz.tokyo](https://mackenz.tokyo)
 Simple site for music stuff built with 11ty/eleventy
 
 ## General concept

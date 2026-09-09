@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/ccn8-caleb/mackenz.tokyo#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "@11ty/eleventy-img": "^7.0.0"
+    "@11ty/eleventy-img": "github:11ty/eleventy-img",
+    "wrangler": "^3.0.0"
   }
 }

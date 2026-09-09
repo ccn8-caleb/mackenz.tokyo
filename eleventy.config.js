@@ -17,5 +17,11 @@ export default function (eleventyConfig) {
 			pictureAttributes: {}
 		},
 	});
-    
+
+    return {
+        dir: {
+            input: "src",      // Markdown files live in ./src
+            output: "_site"    // Built HTML goes into ./_site
+        }
+    };
 };
