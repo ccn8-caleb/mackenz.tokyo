@@ -1,4 +1,10 @@
+---
+layout: base.njk
+title: README
+---
+
 # [mackenz.tokyo](https://mackenz.tokyo)
+
 Simple site for music stuff built with 11ty/eleventy
 
 ## General concept
@@ -15,6 +21,9 @@ One thing I really want to do, after being inspired at a hat shop near my apartm
 
 Spontaneous action is also something I want to emphasize on the site. It is meant to be a creative zone and I want to tap that creative energy in the way the site functions. All this while keeping that top priority, the end user should not feel like the site is hard to navigate and it shouldn't be too much of a burden to upkeep.
 
+### CSS notes
+
+Right now, the site is using a framework called Simple.css. The keyword here is "Simple".
 
 ## Installation & Using Eleventy
 
